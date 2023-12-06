@@ -1,0 +1,110 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+  body {
+    overflow:hidden;
+    background-color: #000;
+  }
+
+main::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    
+
+    background: linear-gradient(-233deg, #000 10%, rgba(0,0,0,0) 65%) no-repeat;
+}
+
+  main .forma.selecionado {
+    display: block;
+  }
+
+  main .forma{
+    display: none;
+    height: 100vh;
+  }
+
+  main .forma .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .conteudo {
+    font-family: 'Rubik';
+    position: absolute;
+    top: 0;
+    left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+  }
+
+  .conteudo .nome {
+    font-family: 'Secular one';
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .conteudo .descricao {
+    color: #fff;
+    line-height: 24px;
+  }
+  .conteudo .logo {
+    background-image: url("../img/one-piece-logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+  .botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .botoes .botao {
+    border: none;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    font-family: 'Yuji Mai';
+  }
+  .botoes .botao img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.botoes .botao.selecionado {
+    color: #d19200;
+    transform: scale(1.4);
+    box-shadow: 0 0 10px #850101;
+}
+.botoes .botao:hover {
+    box-shadow: 0 0 10px #850101;
+}
+
+
